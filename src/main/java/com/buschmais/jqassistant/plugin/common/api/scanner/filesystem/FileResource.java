@@ -6,9 +6,8 @@ import java.io.InputStream;
 /**
  * Represents a file resource.
  */
-public interface FileResource extends Resource {
+public interface FileResource extends CommonFileDirectoryResource {
 
     InputStream createStream() throws IOException;
 
-    java.io.File getFile() throws IOException;
 }
